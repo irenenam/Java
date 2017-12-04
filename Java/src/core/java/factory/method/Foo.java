@@ -12,7 +12,7 @@ public abstract class Foo {
 	private static synchronized void initMapIfNecessary() {
 		if(implementations == null)
 			implementations = new HashMap();
-		  
+		    
 		
 		String firstFoo = getValue("firstFoo");
 		String secondFoo = getValue("secondFoo");
