@@ -18,7 +18,7 @@ public abstract class Foo {
 		String secondFoo = getValue("secondFoo");
 		String thirdFood = getValue("thirdFoo");
 		
-		try {
+		try {  
 			Class obj1 = Class.forName(firstFoo);
 			Class obj2 = Class.forName(secondFoo);
 			Class obj3 = Class.forName(thirdFood);
