@@ -13,7 +13,7 @@ public abstract class Foo {
 	private static Map implementations = null;
 	private static ResourceBundle classNames;
 	
-	//Initializes implementations map the first time it's called. 
+	// Initializes implementations map the first time it's called. 
 	private static synchronized void initMapIfNecessary() {
 		if(implementations == null)
 			implementations = new HashMap();
@@ -43,8 +43,8 @@ public abstract class Foo {
 		return value;
 	}
 	
-	//static 초기화 블록을 사용하게 되면 클래스가 로딩될 때, 한번만 실행하게 된다. 
-	//복잡한 초기화 변수 셋팅 혹은 에러 처리를 위한 구문을 넣을 수 있다. 
+	// static 초기화 블록을 사용하게 되면 클래스가 로딩될 때, 한번만 실행하게 된다. 
+	// 복잡한 초기화 변수 셋팅 혹은 에러 처리를 위한 구문을 넣을 수 있다. 
 	static {
 		try {
 			classNames = ResourceBundle.getBundle("TableText");
